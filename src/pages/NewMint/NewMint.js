@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function NewMint() {
+const NewMint = () => {
     return (
         <div>
             <h2>New NewMint</h2>
         </div>
     )
 }
+
+export default NewMint

@@ -1,16 +1,17 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import User from './pages/User';
-import NewMint from './pages/NewMint';
-import ViewMint from './pages/ViewMint';
-import SignUp from './pages/Signup';
-import SignIn from './pages/Signin';
-import Profile from './pages/Profile';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Home from './pages/Home/Home';
+import User from './pages/User/User';
+import NewMint from './pages/NewMint/NewMint';
+import ViewMint from './pages/ViewMint/ViewMint';
+import SignUp from './pages/SignUp/SignUp';
+import SignIn from './pages/SignIn/SignIn';
+import Profile from './pages/Profile/Profile';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Header />
@@ -41,7 +42,7 @@ function App() {
 
       <Footer />
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
